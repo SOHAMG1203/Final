@@ -1,0 +1,233 @@
+﻿/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFCF4;
+    background-repeat: no-repeat;
+    background-size: 950px 850px;
+}
+
+.container0 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+    height: 25px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Allows the nav to take up available space */
+}
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+            nav ul li a:hover {
+                color: #ffd700; /* Change color on hover */
+            }
+
+/* Home page styles */
+/* Home page styles */
+
+/* Login/Register box styles */
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+    .container .registration {
+        display: none;
+    }
+
+#check:checked ~ .registration {
+    display: block;
+}
+
+#check:checked ~ .login {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.container .form {
+    padding: 2rem;
+}
+
+.form header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form input {
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+    .form input:focus {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    }
+
+.form a {
+    font-size: 16px;
+    color: #009579;
+    text-decoration: none;
+}
+
+    .form a:hover {
+        text-decoration: underline;
+    }
+
+.form input.button {
+    color: #fff;
+    background: #009579;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+    .form input.button:hover {
+        background: #006653;
+    }
+
+.signup {
+    font-size: 17px;
+    text-align: center;
+}
+
+    .signup label {
+        color: #009579;
+        cursor: pointer;
+    }
+
+        .signup label:hover {
+            text-decoration: underline;
+        }
+/*
+.login-register-box {
+    position: relative;
+    margin-left: 800px;
+    margin-top: 275px;
+}
+    */
+.login-register-box {
+    display:none;
+    position: absolute; /* or 'relative' based on your layout */
+    top: 450px; /* Centers the box vertically */
+    left: 900px; /* Centers the box horizontally */
+    width: 430px; /* Adjust the width as needed */
+    z-index: 10; /* Ensures the box is above other elements */
+}
+
+.text-above-login {
+    text-align: right; /* Adjust text alignment as needed */
+    margin-top: 20px; /* Adjust the space between text and the form */
+}
+
+    .text-above-login p {
+        font-size: 50px; /* Adjust font size */
+        color: #333; /* Adjust text color */
+        /* Add other styles as desired */
+    }
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-icon {
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+    padding: 10px;
+}
+
+    .profile-icon img {
+        height: 30px; /* Adjust as needed */
+        width: auto;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+.home-picture {
+    background-image: url("img3.jpg"); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-size: cover; /* or 'contain' based on your preference */
+    background-position: center; /* Adjust as necessary */
+    position: relative;
+    left: -20px; /* Adjust this value to move the image to the left */
+    width: 50%; /* Adjust based on your layout */
+    bottom: 150px;
+    height: 850px; /* Adjust based on your layout */
+    overflow: hidden; /* Ensures the image does not affect the rest of the layout */
+}
+
+.radio-group {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    gap: 10px; /* Adjusts the space between items */
+}
+
+    .radio-group label, .radio-group input[type="radio"] {
+        margin: 0; /* Removes default margin */
+    }
+
+.custom-radio {
+    transform: scale(1.2); /* Adjust this value as needed */
+}
